@@ -1,6 +1,6 @@
 //api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 const API_KEY = "d0f8a8fc77158dd6c4aa3d46d038afea";
-const URL = `http://api.openweathermap.org/data/2.5/weather?`;
+const URL = `https://api.openweathermap.org/data/2.5/weather?`;
 const KELVIN = 273;
 
 const iconEl = document.querySelector(".details img");
