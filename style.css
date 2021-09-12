@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  background-color: #293251;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  max-width: fit-content;
+  height: fit-content;
+
+  padding: 1.2rem 8rem;
+  border-radius: 10px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.details {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.icon {
+}
+
+.temperature {
+}
+
+.description {
+}
+
+.current-city-country {
+}
