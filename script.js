@@ -39,7 +39,7 @@ const getPosition = function (position) {
 };
 
 const showError = function (error) {
-  notificationEl.textContent = error.message;
+  notificationEl.textContent = "Please turn on location";
   notificationEl.style.display = "block";
 };
 
