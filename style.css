@@ -17,8 +17,45 @@ body {
   min-height: 100vh;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  gap: 2.5rem;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.input-city {
+  font-size: 2rem;
+  min-width: fit-content;
+  width: 35rem;
+  padding: 1rem 2rem;
+  outline: none;
+  border-radius: 100px;
+  border: none;
+  margin: 0.5rem;
+}
+
+.input-search {
+  padding: 1.6rem;
+  border-radius: 50%;
+  border: none;
+  margin: 0.5rem;
+  background-color: white;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.input-search i {
+  color: #293251;
+}
+
+.input-search:hover {
+  opacity: 0.7;
 }
 
 .container {
