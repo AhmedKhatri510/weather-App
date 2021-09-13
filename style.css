@@ -53,6 +53,7 @@ body {
 }
 
 .temperature {
+  cursor: pointer;
 }
 
 .description {
