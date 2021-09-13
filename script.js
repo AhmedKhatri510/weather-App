@@ -7,6 +7,7 @@ const iconEl = document.querySelector(".details img");
 const temperatureEl = document.querySelector(".temperature");
 const descriptionEl = document.querySelector(".description");
 const citycountryEl = document.querySelector(".current-city-country");
+const notificationEl = document.querySelector(".notification");
 
 const getWeatherData = async function (lat, lon) {
   const response = await fetch(`${URL}lat=${lat}&lon=${lon}&appid=${API_KEY}`);
@@ -30,13 +31,16 @@ const getWeatherData = async function (lat, lon) {
 };
 
 const getPosition = function (position) {
+  notificationEl.style.display = "none";
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
 
   getWeatherData(lat, lon);
 };
 
-navigator.geolocation.getCurrentPosition(
-  getPosition,
-  console.log("location not found")
-);
+const showError = function (error) {
+  notificationEl.textContent = error.message;
+  notificationEl.style.display = "block";
+};
+
+navigator.geolocation.getCurrentPosition(getPosition, showError);

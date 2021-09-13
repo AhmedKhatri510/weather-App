@@ -34,6 +34,13 @@ body {
   text-align: center;
 }
 
+.notification {
+  display: none;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.192);
+  text-align: center;
+}
+
 .details {
   text-align: center;
 
